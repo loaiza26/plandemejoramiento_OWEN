@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.content-header{
+    background-color: #3d2d26;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+}
+
+.titulo-header h1{
+    color: #f4b265;
+}
+
+.nav-links{
+    background-color: #211a17;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    gap: 0.5rem;
+}
+
+.list-links li{
+    list-style: none;
+    align-items: center;
+
+}
+.list-links a{
+    color: #fee0bc;
+    text-decoration: none;
+}
+
+.cafe-Colombia{
+    background-color: #714d3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 0.8rem;
+   
+    
+}
+
+.text-p h1{
+    color: #f4e9d9;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.text-p p{
+    color: #f4e9d9;
+    text-align:center;
+}
+
+.boton{
+    background-color: #f4b265;
+    border-radius: 25%;
+    width: 40% ;
+    height: 2rem;
+}
+.img-colombia-cafe{
+    background-color: #b68867;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    border-radius: 10%;
+    padding: 0 2rem;
+}
+
+
+.section-productos{
+    background-color: #f4e9d9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 1rem 2rem;
+    gap: 0.8rem;
+
+}
+.section-productos h1{
+    text-align: center;
+}
+
+.tarjetas-articulo1, .tarjetas-articulo2, .tarjetas-articulo3{
+    background-color: aliceblue;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.tarjetas-articulo4{
+    display: none;
+}
+
+.img1, .img2, .img3{
+    background-color: #d08632;
+    text-align: center;
+    height: 3rem;
+    border-radius: 5%;
+    padding: 1rem ;
+}
+.section-productos span{
+    color: #d08632;
+}
+
+.section-contactos{
+    background-color: #352924;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+
+}
+
+.tarjeta-direcion h1{
+    color: #ffe4c4 ;
+    text-align: left;
+}
+.direction-aurora{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.direction-aurora li, a{
+    list-style: none;
+    color: #ffe4c4 ;
+    text-decoration: none;
+}
+.email,.horario{
+    display: none;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-grupo-name, .input-grupo-email {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: #fee0bc;
+
+}
+.input-grupo-menssag{
+    display: none;
+}
+
+.boton-form{
+    background-color: #f4b265;
+    width: 20%;
+    height: 2rem;
+    border-radius: 20%;
+
+}
+
+.content-footer{
+    background-color: #181311;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 0.6rem;
+
+}
+
+.sobre-aurora{
+    display: flex;
+    flex-direction: column;
+    color: #ffe4c4;
+    align-items: center;
+}
+.sobre-aurora li{
+    list-style: none;
+}
+.redes-sociales h2{
+    display: none;
+}
+
+.enlaces-aurora{
+    display: none;
+}
+
+.enlaces-aurora h2{
+    display: none;
+}
+
+.red-footer{
+    display: flex;
+    gap: 1rem;
+}
+.red-footer li{
+    list-style: none;
+}
+
+.red-tiktok{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .content-header{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem;
+        gap: 1rem;
+
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        background-color:#3d2d26;
+    }
+    .list-links{
+        display: flex;
+        gap: 1rem;
+    }
+    .section-productos{
+        display: grid;
+        grid-template-columns:repeat(6, 1fr);
+        grid-template-rows:repeat(3, 1fr) ;
+        width: 100%;
+
+    }
+    .section-productos h1{
+        grid-column: 1 / 7; 
+        gap: 1rem;
+    }
+
+    .tarjetas-articulo1{
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+    .tarjetas-articulo2{
+        grid-column: 4 / 7 ;
+
+    }
+    .tarjetas-articulo3{
+        grid-column: 1 / 4 ;
+    }
+    .tarjetas-articulo4{
+        grid-column: 4 / 7;
+
+    }
+    .tarjetas-articulo1, .tarjetas-articulo2, .tarjetas-articulo3, .tarjetas-articulo4{
+    background-color: aliceblue;
+    border-radius: 5%;
+   display: grid;
+}
+
+.img4{
+     background-color: #d08632;
+    text-align: center;
+    height: 3rem;
+    border-radius: 5%;
+    padding: 1rem ;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-footer{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.sobre-aurora{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.redes-sociales h2{
+    color: #fee0bc;
+    display: flex;
+    justify-content: center;
+}
+.red-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+}
+@media screen and (min-width: 1024px){
+
+.cafe-Colombia{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.text-p{
+    grid-column: 1 / 4 ;
+    grid-row: 1 / 2;
+    font-size: 1.5rem;
+    justify-items: start;
+    
+}
+.text-p p{
+    display: flex;
+    text-align: left;
+}
+.boton{
+    grid-column: 1 / 3;
+    width: 100%;
+    align-items: center;
+
+}
+.img-colombia-cafe{
+    grid-column: 4 / 6;
+    grid-row: 1 / 3 ;
+    width: 31rem;
+    height: 11rem;
+}
+.section-productos{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+}
+.section-productos h1{
+    grid-column: 1 / 10;
+}
+.tarjetas-articulo3{
+    grid-column: 7 / 10;
+}
+.tarjetas-articulo4{
+    display: none;
+}
+
+.tarjeta-direcion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.direction-aurora{
+    grid-row: 1/ 3;
+}
+
+.horario{
+    display:flex ;
+}
+.input-grupo-menssag{
+    display: flex;
+    flex-direction: column;
+    color: #fee0bc;
+}
+.content-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.enlaces-aurora {
+    display: grid;
+    justify-items: end;
+
+}
+
+.enlaces-aurora h2{
+    display: flex;
+    color: #fee0bc;
+}
+.content-footer li{
+    list-style: none;
+}
+.red-tiktok{
+    display: block;
+}
+    
+}
